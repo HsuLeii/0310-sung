@@ -721,7 +721,7 @@ header.header_index {
 
 footer {
   background-color: #2f2f2f;
-  padding: 20px 10%;
+  padding: 40px 10%;
 }
 
 footer .footer_area .footer_information {
@@ -891,7 +891,7 @@ footer .scroll_top:hover .scroll_top_border {
 .slide.slide_index {
   background: linear-gradient(70deg, #fff 50%, #5a6afe 0%);
   overflow: hidden;
-  padding: 75px 0 0;
+  padding: 170px 0 0;
 }
 
 .slide.slide_index .slide_index_area {
