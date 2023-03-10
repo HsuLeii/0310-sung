@@ -1,0 +1,476 @@
+.slide {
+    position: relative;
+
+    // 個人經歷
+    &.slide_personal {
+        background-color: #ffaa65;
+        background-image: url(../image/slide/slide_personal.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    // 研究成果
+    &.slide_research {
+        background-color: #7fdefd;
+        background-image: url(../image/slide/slide_research.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    // 實驗室簡介
+    &.slide_laboratory {
+        background-color: #b7cc57;
+        background-image: url(../image/slide/slide_laboratory.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    // 社會貢獻
+    &.slide_society {
+        background-color: #77c6c9;
+        background-image: url(../image/slide/slide_society.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    &.slide_index {
+        background: linear-gradient(70deg, $white 50%, $main_color 0%);
+        overflow: hidden;
+        padding: 75px 0 0;
+
+        .slide_index_area {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 15px 10px 0;
+            position: relative;
+            margin: 0 auto;
+
+            .slide_title_index {
+                width: 55%;
+                margin: 0;
+                padding: 0 5px 20px;
+                position: relative;
+                z-index: 1;
+
+                .slide_name_area {
+                    margin: 0 0 5px;
+
+                    .slide_name {
+                        font-size: 40px;
+                    }
+                }
+
+                .slide_information {
+                    .slide_information_text {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 5px 0;
+
+                        p {
+                            padding: 0 0 0 8px;
+
+                            &:nth-child(1) {
+                                margin-right: 5px;
+                                position: relative;
+
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    width: 5px;
+                                    height: 5px;
+                                    background-color: $black;
+                                    border-radius: 50%;
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translate(0, -50%);
+                                }
+                            }
+                        }
+
+                        &.slide_information_link_area {
+                            p {
+                                width: 100%;
+                            }
+
+                            .slide_information_link {
+                                padding: 0 0 0 8px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slide_figure {
+                width: 45%;
+                position: relative;
+                left: 0;
+                transform: translate(35% , 0);
+                z-index: 2;
+            }
+
+            .slide_ntnu {
+                display: none;
+            }
+
+            .slide_ntnu_building {
+                width: 50%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .slide_title_index_area{
+            position: absolute;
+    max-width: 1200px;
+    width: 80%;
+        }
+.slide_information_link_area{
+    margin: 20px 0 !important;
+}
+    }
+
+    &.slide_page {
+        .slide_title {
+            // margin: 0 auto;
+            // padding: 50px 10%;
+
+            // 新版
+            padding: 50px 5%;
+
+            h3 {
+                color: $white;
+                text-shadow: $black 2px 2px 10px;
+            }
+        }
+
+        .slide_figure {
+            display: none;
+        }
+    }
+
+}
+
+main {
+    background-color: $main_bg;
+
+    .main_content_area {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 0;
+        background-color: $white;
+
+        .main_content_left {
+            display: none;
+        }
+
+        .main_content_right {
+            padding: 20px 5%;
+
+            .main_content_text_item {
+                margin: 0 0 40px;
+
+                .main_content_text_tittle {
+                    margin: 0 0 10px;
+                }
+
+                .main_content_text_content{
+                    .text_content_paragraph{
+                        margin: 5px 0;
+                        &.text_space{
+                            text-indent: 2em;
+                        }
+                    }
+                    
+                    .text_around_area{
+                        margin: 20px 0;
+                        .text_around_img{
+                            margin: 10px;
+                            float: right;
+                            &.text_around_img_laboratory{
+                                width: 50%;
+                                max-width: 350px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main_content_img_item{
+                margin: 40px auto;
+            }
+        }
+
+        // 單邊
+        &.single_area{
+            .main_content_right {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .slide {
+
+        &.slide_index {
+
+            .slide_index_area {
+                padding: 15px 5% 0;
+
+                .slide_title_index {
+                    width: 65%;
+
+                    .slide_information {
+                        .slide_information_text {
+                            p {
+                                padding: 0 0 0 10px;
+                            }
+                        }
+                    }
+                }
+
+                // .slide_figure {
+                //     width: 35%;
+                // }
+            }
+
+        }
+
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .slide {
+
+        &.slide_index {
+
+
+            .slide_index_area {
+                align-items: center;
+
+                .slide_title_index {
+                    width: 65%;
+
+                    .slide_information {
+                        .slide_information_text {
+                            p {
+                                padding: 0 0 0 10px;
+                            }
+                        }
+                    }
+                }
+
+                // .slide_figure {
+                //     width: 35%;
+                // }
+            }
+
+
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .slide {
+        .slide_title {
+            padding: 80px 10%;
+        }
+
+        &.slide_index {
+
+            .slide_index_area {
+                .slide_title_index {
+                    width: 60%;
+                    padding: 0 15px 20px 0;
+
+                    .slide_name {
+                        
+                    }
+
+                    .slide_information {
+                        .slide_information_text {
+                            p {
+                                padding: 0 0 0 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+    main {}
+}
+
+@media screen and (min-width: 992px) {
+    .slide {
+
+        &.slide_index {
+
+            .slide_index_area {
+                .slide_title_index {
+                    padding: 0 30px 20px 0;
+
+                    .slide_name_area {
+    
+                        .slide_name {
+                            font-size: 45px;
+                        }
+                    }
+                }
+
+                // .slide_figure {
+                //     width: 30%;
+                // }
+
+
+            }
+
+        }
+
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .slide {
+
+        &.slide_index {
+            justify-content: center;
+
+            .slide_index_area {
+
+                .slide_title_index {
+                    width: auto;
+                    padding: 0 80px 20px 0;
+
+                    .slide_name_area {
+    
+                        .slide_name {
+                            font-size: 50px;
+                        }
+                    }
+                }
+
+                // .slide_figure {
+                //     position: relative;
+                //     z-index: 1;
+                //     width: 300px;
+                // }
+
+                .slide_ntnu {
+                    display: block;
+                    width: 30%;
+                    position: absolute;
+                    left: calc(50% + 350px);
+                }
+            }
+
+        }
+
+        &.slide_page {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 0 5%;
+
+            .slide_title {
+                padding: 80px 5% 80px 0;
+            }
+
+            .slide_figure {
+                display: block;
+                width: 200px;
+            }
+        }
+    }
+
+    main {
+        .main_content_area {
+            display: flex;
+
+            .main_content_left {
+                display: block;
+                width: 20%;
+                min-width: 230px;
+                padding: 20px;
+
+                .main_content_left_ul {
+                    li {
+                        margin: 10px 0;
+
+                        .main_content_left_link {
+
+                            &.active,
+                            &:hover {
+                                color: $main_color;
+                            }
+
+                            position: relative;
+
+                            &.active {
+                                &::after {
+                                    position: absolute;
+                                    font-family: 'Font Awesome 5 Free';
+                                    color: $main_color;
+                                    font-weight: 900;
+                                    content: "\f0de";
+                                    top: 50%;
+                                    margin: 0 0 0 5px;
+                                    font-size: 15px;
+                                    transform: translate(0px, -50%) rotate(90deg);
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .main_content_right {
+                width: calc(100% - 230px);
+            }
+
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    .slide {
+
+        &.slide_index {
+
+            .slide_index_area {
+
+                .slide_title_index {
+
+                    .slide_name {
+                        
+                    }
+                }
+
+                // .slide_figure {
+                //     width: 350px;
+                // }
+
+                .slide_ntnu {
+                    left: calc(50% + 350px);
+                    width: 35%;
+                }
+            }
+
+        }
+    }
+}
