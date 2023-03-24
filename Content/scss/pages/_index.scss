@@ -62,89 +62,101 @@ main {
                                     margin: 0 10px 0 0;
                                 }
 
-                                .page_content_part_marker_text_important{
+                                .page_content_part_marker_text_important {
                                     color: $black;
                                 }
                             }
                         }
 
-                        .about_body_table{
+                        .about_body_table {
                             overflow-x: scroll;
-                            table { 
-                                width: 100%; 
+
+                            table {
+                                width: 100%;
                                 min-width: 1050px;
-                                border-collapse: collapse; 
-                                thead{
-                                    tr{
-                                        th{
-                                            &:nth-child(1){
+                                border-collapse: collapse;
+
+                                thead {
+                                    tr {
+                                        th {
+                                            &:nth-child(1) {
                                                 width: 30%;
                                             }
-                                            &:nth-child(2){
+
+                                            &:nth-child(2) {
                                                 width: 30%;
                                             }
-                                            &:nth-child(3){
+
+                                            &:nth-child(3) {
                                                 width: 20%;
                                             }
-                                            &:nth-child(4){
+
+                                            &:nth-child(4) {
                                                 width: 20%;
                                             }
                                         }
                                     }
                                 }
 
-                                tbody{
-                                    tr{
-                                        &:nth-child(odd){
-                                            background-color:$light_grey;
-                                            td{
+                                tbody {
+                                    tr {
+                                        &:nth-child(odd) {
+                                            background-color: $light_grey;
+
+                                            td {
                                                 border: 1px solid $white;
                                             }
-                                            }
+                                        }
 
-                                            &:hover{
-                                                background-color: lighten($main_color, 25%);
-                                                td{
-                                                    color: $main_color_yellow;
-                                                }
+                                        &:hover {
+                                            background-color: lighten($main_color, 25%);
+
+                                            td {
+                                                color: $main_color_yellow;
                                             }
+                                        }
                                     }
                                 }
-                                tr{
-                                    th { 
-                                        background-color: $main_color; 
-                                        color: $white; 
-                                        font-weight: bold; 
-                                        }
-                                        td, th { 
-                                            padding: 10px; 
-                                            border: 1px solid $grey; 
-                                            text-align: center; 
-                                            }
-                                }
-                                }
 
-                                &::-webkit-scrollbar{
-                                    background: transparent;
-                                    height: 8px;
-                                    width: 8px;
+                                tr {
+                                    th {
+                                        background-color: $main_color;
+                                        color: $white;
+                                        font-weight: bold;
+                                    }
+
+                                    td,
+                                    th {
+                                        padding: 10px;
+                                        border: 1px solid $grey;
+                                        text-align: center;
+                                    }
                                 }
-                                &::-webkit-scrollbar-thumb {
-                                    border: none;
-                                    box-shadow: none;
-                                    background: $main_color;
-                                    border-radius: 4px;
-                                    min-height: 40px;
-                                }
-                                &::-webkit-scrollbar-track{
-                                    margin: 3px 0;
-                                }
+                            }
+
+                            &::-webkit-scrollbar {
+                                background: transparent;
+                                height: 8px;
+                                width: 8px;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border: none;
+                                box-shadow: none;
+                                background: $main_color;
+                                border-radius: 4px;
+                                min-height: 40px;
+                            }
+
+                            &::-webkit-scrollbar-track {
+                                margin: 3px 0;
+                            }
                         }
 
                         .timeline_area {
                             padding: 30px 0;
                             position: relative;
-                        
+
                             &::before {
                                 content: "";
                                 position: absolute;
@@ -154,40 +166,40 @@ main {
                                 width: 3px;
                                 height: 100%;
                                 background-color: $main_color;
-                        
+
                             }
-                        
+
                             .timeline_item {
                                 position: relative;
                                 margin: 0 0 40px 0;
-                        
+
                                 &:last-of-type {
                                     margin: 0;
                                 }
-                        
+
                                 .timeline_year {
                                     position: relative;
                                     left: 20px;
                                     transform: translate(0%, 0%);
                                     margin: 0 0 20px;
                                 }
-                        
+
                                 .timeline_right {
                                     margin: 0 0 0 20px;
-                        
+
                                     .timeline_right_content {
                                         .timeline_right_content_item {
                                             margin: 20px 0;
-                        
+
                                             .timeline_title {
                                                 color: $main_color;
                                                 margin: 0 0 5px;
                                             }
                                         }
                                     }
-                        
+
                                 }
-                        
+
                                 &::before {
                                     content: "";
                                     position: absolute;
@@ -211,6 +223,72 @@ main {
 
 
     }
+
+    .index_area {
+        min-height: 100vh;
+        background-image: url(../image/photo/index/index_bg.png);
+
+        .index_area_content {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .index_area_left {
+                width: 60%;
+
+                .index_area_slide {
+                    .slide {
+                        .swiper {
+                            .swiper-wrapper {
+                                height: auto;
+
+                                .swiper-slide {
+                                    img {
+                                        padding: 15px;
+                                        background-color: $white;
+                                        border-radius: 5px;
+                                        border: 1px solid $grey;
+                                    }
+
+                                    .slide_index_text {
+                                        position: absolute;
+                                        bottom: 15px;
+                                        width: calc(100% - 30px);
+                                        left: 50%;
+                                        transform: translate(-50%, 0px);
+                                        background-color: rgba($black, 0.6);
+                                        padding: 5px 10px;
+
+                                        p {
+                                            color: $white;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .swiper-pagination {
+                                position: inherit;
+                                bottom: auto;
+                                left: auto;
+                                margin: 20px 0 0;
+
+                                .swiper-pagination-bullet{
+                                    background-color: rgba($black, 0.3);
+                                    opacity: 1;
+                                    width: 15px;
+                                    height: 15px;
+                                    &.swiper-pagination-bullet-active{
+                                        background-color: rgba($black, 0.5);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 @media screen and (min-width: 576px) {}
@@ -218,32 +296,32 @@ main {
 @media screen and (min-width: 768px) {
     main {
         .about_area {
-    
+
             .about_area_item {
-    
+
                 .about_area_content {
-    
+
                     .about_area_content_item {
-    
+
                         .about_body {
-    
+
                             .timeline_area {
-                            
+
                                 .timeline_item {
-                            
+
                                     &::before {
                                         top: calc(20px * 1.5 / 2);
                                     }
                                 }
                             }
                         }
-    
+
                     }
                 }
-    
+
             }
-    
-    
+
+
         }
     }
 }
@@ -263,6 +341,7 @@ main {
 
                             .about_body_item {
                                 margin: 0 0 20px 0;
+
                                 .page_content_part_marker_text {
                                     flex-direction: row;
 
@@ -273,30 +352,31 @@ main {
                             }
 
                             .timeline_area {
-                            
-                                &::before{
+
+                                &::before {
                                     left: 100px;
                                 }
-                            
+
                                 .timeline_item {
                                     display: flex;
                                     justify-content: space-between;
 
-                                    .timeline_year{
+                                    .timeline_year {
                                         left: 100px;
-                                        transform: translate(calc(-100% - 20px) , 0);
+                                        transform: translate(calc(-100% - 20px), 0);
                                     }
-                                    .timeline_right{
+
+                                    .timeline_right {
                                         width: calc(100% - 100px);
 
-                                        .timeline_right_content{
-                                            .timeline_right_content_item{
+                                        .timeline_right_content {
+                                            .timeline_right_content_item {
                                                 margin: 0 0 40px 20px;
                                             }
                                         }
-                                        
+
                                     }
-                            
+
                                     &::before {
                                         top: calc(23px * 1.5 / 2);
                                         left: 100px;
@@ -320,6 +400,7 @@ main {
                     .about_area_content_item {
                         &.two_item {
                             width: 47.5%;
+
                             .about_body {
                                 .about_body_item {
                                     .page_content_part_marker_text {
@@ -329,11 +410,11 @@ main {
                             }
                         }
 
-                        .about_body{
+                        .about_body {
                             .timeline_area {
-                            
+
                                 .timeline_item {
-                            
+
                                     &::before {
                                         top: calc(26px * 1.5 / 2);
                                     }
