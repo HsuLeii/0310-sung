@@ -2,6 +2,20 @@ main {
 
     .main_content_area{
         .main_content_right{
+            .question_area{
+                .item_question{
+                    .faq_question{
+                        .arrow{
+                            display: inline-block;
+                            border-width: 0px 8px 8px 8px;
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-top: 8px solid $black;
+                        }
+                    }
+                }
+            }
+
             
         }
     }

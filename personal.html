@@ -39,57 +39,59 @@
   <!-- ------- ------- ------- ------- ------- ------- ------- -->
 
   <div class="slide slide_bg slide_page slide_personal">
-    <div class="slide_title slide_title_page">
-      <h3>
-        宋曜廷 Yao-Ting Sung<br/>
-        國立臺灣師範大學教育心理與輔導學系
-      </h3>
-    </div>
-
-    <div class="slide_figure">
-        <img src="Content/image/slide/figure_personal.png" alt="">
+    <div class="slide_page_area">
+      <div class="slide_title slide_title_page">
+        <h3>
+          宋曜廷<br/>
+          Yao-Ting Sung<br/>
+          國立臺灣師範大學教育心理與輔導學系
+        </h3>
       </div>
+  
+      <div class="slide_figure">
+          <img src="Content/image/slide/figure_personal.png" alt="">
+        </div>
+    </div>
+    
   </div>
   
   <main>
 
     <div class="main_content_area single_area">
         <div class="main_content_right">
-            <div class="main_content_text_item">
-                <div class="main_content_text_tittle">
-                    <h4>關於我About</h4>
+          <div class="question_area">
+            <div class="item_question">
+                <div class="faq_question">
+                    <h4>Q：</h4>
+                    <h4>Does the SRE system make use of any international standards to classify books?</h4>
+                    <span class="arrow"></span>
                 </div>
-                <div class="main_content_text_content">
-                    <p class="text_content_paragraph">臺灣師範大學   副校長</p>
-                    <p class="text_content_paragraph">臺灣師範大學   師大講座教授</p>
-                    <p class="text_content_paragraph">臺灣師範大學   高等教育深耕計畫辦公室執行長</p>
-
-                    <p class="text_content_paragraph">美國匹茲堡大學 Learning Research and Development Center     博士後</p>
-                    <p class="text_content_paragraph">臺灣師範大學教育心理與輔導研究所     博士	</p>
-                    <p class="text_content_paragraph">臺灣師範大學教育心理與輔導研究所     碩士</p>
-                </div>
-            </div>
-
-            <div class="main_content_text_item">
-                <div class="main_content_text_tittle">
-                    <h4>現職及主要經歷</h4>
-                </div>
-                <div class="main_content_text_content">
-                    <p class="text_content_paragraph">2015.08 -  臺灣師範大學     副校長</p>
-                    <p class="text_content_paragraph">2015.01 -  臺灣師範大學     師大講座教授</p>
-                    <p class="text_content_paragraph"> ......	</p>
-                    <p class="text_content_paragraph">1996.08 – 2000.07 臺灣師範大學教育心理與輔導系     講師</p>
+                <div class="faq_answer">
+                    <h4>A：</h4>
+                    <p>
+                        The SRE system first considers the norms of elementary and high school grade levels in Taiwan as its reference standard. The classification system of SRE's reader-grading technology corresponds to CEFR and Lexile. However, the platform is still in the process of integrating these standards into the system. Nevertheless, English learners can still use the system to determine the grade/level of their reading abilities and find suitable books.
+                    </p>
                 </div>
             </div>
 
-            <div class="main_content_text_item">
-                <div class="main_content_text_tittle">
-                    <h4>相關經歷</h4>
-                </div>
-                <div class="main_content_text_content">
-                    <p class="text_content_paragraph">2015.08 -</p>
-                </div>
-            </div>
+            <div class="item_question">
+              <div class="faq_question">
+                  <h4>學歷</h4>
+                  <span class="arrow"></span>
+              </div>
+              <div class="faq_answer">
+                  <p>
+                    匹茲堡大學 Learning Research and Development Center 博士後 2002/8 - 2004/2
+                  </p>
+                  <p>
+臺灣師範大學 教育心理與輔導研究所 博士 1994/9 - 2000/3
+                  </p>
+                  <p>
+臺灣師範大學 教育心理與輔導研究所 碩士 1990/9 - 1992/6
+                  </p>
+              </div>
+          </div>
+          </div>
         </div>
     </div>
 
@@ -110,38 +112,24 @@
     });
   </script>
 
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-          $("header").addClass("fixed_header");
-        } else {
-          $("header").removeClass("fixed_header");
-        }
-      });
-
-    });
-
-    //scroll-top 按鈕開始
-    $(document).ready(function () {
-      $(".scroll_top").hide();
-      $(window).scroll(function () {
-        var windowTop = $(window).scrollTop();
-        if (windowTop > 100) {
-          $(".scroll_top").fadeIn();
-        } else {
-          $(".scroll_top").fadeOut();
-        }
-      });
-      // scroll body to 0px on click
-      $(".scroll_top").click(function () {
-        $("body,html").animate({
-          scrollTop: 0
-        }, 200);
-      });
-    });
-    //scroll-top 按鈕結束
-  </script>
+<script>
+  $("div.faq_answer").hide();
+  $(".faq_question").click(function () {
+      $(this).children("span").toggleClass("up");
+      if ($("+div", this).css("display") == "none") {
+          $("div.faq_answer").slideUp();
+          $(".item_question").children(".faq_question").removeClass("open");
+          $("+div", this).slideDown();
+          $(".faq_question").children("span").removeClass("up");
+          $(this).children("span").toggleClass("up");
+          $(this).addClass("open");
+      }
+      else if ($("+div", this).css("display") !== "none"){
+          $(this).removeClass("open");
+          $("+div", this).slideUp();
+      }
+  })
+</script>
 
 </body>
 

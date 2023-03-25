@@ -115,6 +115,7 @@ main {
                 .index_area_left {
                     width: 57.5%;
                     padding: 160px 0 85px;
+                    margin: 0 0 0 40px;
     
                     .index_area_slide {
                         .slide {
@@ -200,5 +201,17 @@ main {
 }
 
 @media screen and (min-width: 1400px) {
+    main {
 
+        .index_area {
+    
+            .index_area_content {
+    
+                .index_area_left {
+                    margin: 0;
+                }
+            }
+    
+        }
+    }
 }

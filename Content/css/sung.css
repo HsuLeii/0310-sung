@@ -78,7 +78,6 @@ body { background-color: #f0f2f2; }
   button { font-size: 19px; } }
 
 @media screen and (min-width: 1400px) { h1 { font-size: 44px; }
-  h3 { font-size: 32px; }
   h4 { font-size: 26px; }
   h4 a { font-size: 26px; }
   h5 { font-size: 22px; }
@@ -279,6 +278,14 @@ footer .scroll_top:hover .scroll_top_border { stroke-dashoffset: 0; }
 
 .slide.slide_society { background-color: #77c6c9; background-image: url(../image/slide/slide_society.png); background-position: center; background-size: cover; }
 
+.slide.slide_page .slide_page_area { width: 80%; }
+
+.slide.slide_page .slide_page_area .slide_title { padding: 30px 5%; }
+
+.slide.slide_page .slide_page_area .slide_title h3 { color: #fff; }
+
+.slide.slide_page .slide_page_area .slide_figure { display: none; }
+
 main { background-color: #f4f8fb; }
 
 main .main_content_area { width: 80%; max-width: 1200px; margin: 0 auto; padding: 40px 0; background-color: #fff; }
@@ -305,11 +312,11 @@ main .main_content_area .main_content_right .main_content_img_item { margin: 40p
 
 main .main_content_area.single_area .main_content_right { width: 100%; }
 
-@media screen and (min-width: 768px) { .slide .slide_title { padding: 80px 10%; } }
+@media screen and (min-width: 768px) { .slide .slide_page_area .slide_title { padding: 80px 10%; } }
 
-@media screen and (min-width: 1200px) { .slide.slide_page { display: flex; align-items: flex-end; justify-content: center; padding: 0 5%; }
-  .slide.slide_page .slide_title { padding: 80px 5% 80px 0; }
-  .slide.slide_page .slide_figure { display: block; width: 200px; }
+@media screen and (min-width: 1200px) { .slide.slide_page .slide_page_area { display: flex; align-items: flex-end; justify-content: center; padding: 0 5%; max-width: 1200px; margin: 0 auto; }
+  .slide.slide_page .slide_page_area .slide_title { padding: 80px 5% 80px 0; }
+  .slide.slide_page .slide_page_area .slide_figure { display: block; width: 260px; }
   main .main_content_area { display: flex; }
   main .main_content_area .main_content_left { display: block; width: 20%; min-width: 230px; padding: 20px; }
   main .main_content_area .main_content_left .main_content_left_ul li { margin: 10px 0; }
@@ -350,7 +357,7 @@ main .index_area .index_area_content .index_area_left .index_area_text_area .ind
 
 @media screen and (min-width: 1024px) { main .index_area { background-image: url(../image/photo/index/index_bg.jpg); background-position: center; background-size: cover; }
   main .index_area .index_area_content { max-width: 1200px; margin: 0 auto; }
-  main .index_area .index_area_content .index_area_left { width: 57.5%; padding: 160px 0 85px; }
+  main .index_area .index_area_content .index_area_left { width: 57.5%; padding: 160px 0 85px; margin: 0 0 0 40px; }
   main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper { height: auto; }
   main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide img { padding: 15px; background-color: #fff; border-radius: 5px; border: 1px solid #E5E5E5; }
   main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide .slide_index_text { position: absolute; bottom: 15px; width: calc(100% - 30px); left: 50%; transform: translate(-50%, 0px); background-color: rgba(47, 47, 47, 0.6); padding: 5px 10px; }
@@ -363,5 +370,9 @@ main .index_area .index_area_content .index_area_left .index_area_text_area .ind
   main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_name .big_name { font-size: 48px; }
   main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_material .index_area_text_experience { margin: 0 0 25px; }
   main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_material .index_area_text_information .information_link_area { display: flex; } }
+
+@media screen and (min-width: 1400px) { main .index_area .index_area_content .index_area_left { margin: 0; } }
+
+main .main_content_area .main_content_right .question_area .item_question .faq_question .arrow { display: inline-block; border-width: 0px 8px 8px 8px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #2f2f2f; }
 
 main .main_content_area .main_content_right .sr_logo { width: 40%; max-width: 250px; margin: 0 auto; }
