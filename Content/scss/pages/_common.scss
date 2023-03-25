@@ -95,65 +95,10 @@ main {
 }
 
 @media screen and (min-width: 500px) {
-    .slide {
-
-        &.slide_index {
-
-            .slide_index_area {
-                padding: 15px 5% 0;
-
-                .slide_title_index {
-                    width: 65%;
-
-                    .slide_information {
-                        .slide_information_text {
-                            p {
-                                padding: 0 0 0 10px;
-                            }
-                        }
-                    }
-                }
-
-                // .slide_figure {
-                //     width: 35%;
-                // }
-            }
-
-        }
-
-    }
 }
 
 @media screen and (min-width: 576px) {
-    .slide {
 
-        &.slide_index {
-
-
-            .slide_index_area {
-                align-items: center;
-
-                .slide_title_index {
-                    width: 65%;
-
-                    .slide_information {
-                        .slide_information_text {
-                            p {
-                                padding: 0 0 0 10px;
-                            }
-                        }
-                    }
-                }
-
-                // .slide_figure {
-                //     width: 35%;
-                // }
-            }
-
-
-        }
-
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -161,34 +106,7 @@ main {
         .slide_title {
             padding: 80px 10%;
         }
-
-        &.slide_index {
-
-            .slide_index_area {
-                .slide_title_index {
-                    width: 60%;
-                    padding: 0 15px 20px 0;
-
-                    .slide_name {
-                        
-                    }
-
-                    .slide_information {
-                        .slide_information_text {
-                            p {
-                                padding: 0 0 0 15px;
-                            }
-                        }
-                    }
-                }
-            }
-
-
-
-        }
     }
-
-    main {}
 }
 
 @media screen and (min-width: 992px) {
