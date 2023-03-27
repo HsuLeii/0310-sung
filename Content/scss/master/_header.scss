@@ -393,12 +393,11 @@ header {
                 .navbar-collapse {
                     position: initial;
                     display: flex !important;
-                    justify-content: center;
+                    justify-content: flex-end;
                     background-color: transparent;
                     min-width: 490px;
                     padding: 0;
                     z-index: 1;
-                    margin: 0 auto;
 
                     .navbar-nav {
                         padding: 0;

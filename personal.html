@@ -60,6 +60,12 @@
     <div class="main_content_area single_area">
       <div class="main_content_right">
         <div class="personal_area">
+
+          <div class="CV_btn_area">
+            <p>C.V.下載</p>
+            <a href="http://" class="CV_btn_link">DOC</a>
+            <a href="http://" class="CV_btn_link">PDF</a>
+          </div>
           <div class="personal_item">
             <div class="personal_tittle open">
               <h4>學歷</h4>
@@ -91,9 +97,9 @@
           <div class="personal_item">
             <div class="personal_tittle">
               <h4>經歷</h4>
-              <span class="arrow"></span>
+              <span class="arrow up"></span>
             </div>
-            <div class="personal_content learning_experience hide">
+            <div class="personal_content learning_experience">
               <table class="personal_content_item_table">
               <tbody>
                 <tr class="personal_content_item_tr">
@@ -159,9 +165,9 @@
           <div class="personal_item">
             <div class="personal_tittle">
               <h4>專長</h4>
-              <span class="arrow"></span>
+              <span class="arrow up"></span>
             </div>
-            <div class="personal_content learning_experience hide">
+            <div class="personal_content learning_experience">
               <table class="personal_content_item_table">
               <tbody>
                 <tr class="personal_content_item_tr">
@@ -193,9 +199,9 @@
           <div class="personal_item">
             <div class="personal_tittle">
               <h4>學術服務</h4>
-              <span class="arrow"></span>
+              <span class="arrow up"></span>
             </div>
-            <div class="personal_content academic_services hide">
+            <div class="personal_content academic_services">
               <table class="personal_content_item_table">
               <tbody>
                 <tr class="personal_content_item_tr">
@@ -295,9 +301,9 @@
           <div class="personal_item">
             <div class="personal_tittle">
               <h4>榮譽與獎勵</h4>
-              <span class="arrow"></span>
+              <span class="arrow up"></span>
             </div>
-            <div class="personal_content honor hide">
+            <div class="personal_content honor">
               <table class="personal_content_item_table">
                 <tbody>
                 <tr class="personal_content_item_tr">
@@ -383,9 +389,9 @@
           <div class="personal_item">
             <div class="personal_tittle">
               <h4>教授科目</h4>
-              <span class="arrow"></span>
+              <span class="arrow up"></span>
             </div>
-            <div class="personal_content learning_experience hide">
+            <div class="personal_content learning_experience">
               <table class="personal_content_item_table">
                 <thead>
                   <tr>
@@ -464,21 +470,21 @@
   </script>
 
   <script>
-    $("div.personal_content.hide").hide();
+    // $("div.personal_content.hide").hide();
     $(".personal_tittle").click(function () {
       // $(this).children("span").toggleClass("up");
       if ($("+div", this).css("display") == "none") {
-        $("div.personal_content").slideUp();
-        $(".item_question").children(".personal_tittle").removeClass("open");
+        // $("div.personal_content").slideUp();
+        // $(".item_question").children(".personal_tittle").removeClass("open");
         $("+div", this).slideDown();
-        $(".personal_tittle").children("span").removeClass("up");
-        $(this).children("span").toggleClass("up");
+        $(this).children("span").addClass("up");
         $(this).addClass("open");
       } 
-      // else if ($("+div", this).css("display") !== "none") {
-      //   $(this).removeClass("open");
-      //   $("+div", this).slideUp();
-      // }
+      else if ($("+div", this).css("display") !== "none") {
+        $(this).removeClass("open");
+        $("+div", this).slideUp();
+        $(this).children("span").removeClass("up");
+      }
     })
   </script>
 

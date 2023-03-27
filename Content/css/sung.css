@@ -195,7 +195,7 @@ header.header_index { background-color: transparent; position: absolute; }
   header .navbar .container-fluid .navbar-logo span { margin: 0 5px; font-size: 15px; }
   header .navbar .container-fluid .navbar-logo p { font-size: 15px; }
   header .navbar .container-fluid .navbar-toggler { display: none; }
-  header .navbar .container-fluid .navbar-collapse { position: initial; display: flex !important; justify-content: center; background-color: transparent; min-width: 490px; padding: 0; z-index: 1; margin: 0 auto; }
+  header .navbar .container-fluid .navbar-collapse { position: initial; display: flex !important; justify-content: flex-end; background-color: transparent; min-width: 490px; padding: 0; z-index: 1; }
   header .navbar .container-fluid .navbar-collapse .navbar-nav { padding: 0; height: auto; overflow: initial; flex-direction: row; }
   header .navbar .container-fluid .navbar-collapse .nav-item { border-bottom: 0px; }
   header .navbar .container-fluid .navbar-collapse .nav-item.nowPage { border-bottom: 0px; }
@@ -373,6 +373,12 @@ main .index_area .index_area_content .index_area_left .index_area_text_area .ind
 
 @media screen and (min-width: 1400px) { main .index_area .index_area_content .index_area_left { margin: 0; } }
 
+main .main_content_area .main_content_right .personal_area .CV_btn_area { display: flex; align-items: center; justify-content: flex-end; margin: 0 0 20px; }
+
+main .main_content_area .main_content_right .personal_area .CV_btn_area .CV_btn_link { margin: 0 0 0 10px; padding: 5px 10px; color: #91252b; border: 1px solid #91252b; border-radius: 5px; }
+
+main .main_content_area .main_content_right .personal_area .CV_btn_area .CV_btn_link:hover { background-color: #91252b; color: #fff; }
+
 main .main_content_area .main_content_right .personal_area .personal_item { margin: 20px 0; }
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_tittle { display: flex; align-items: center; justify-content: center; background-color: #f1f1f1; padding: 10px 0; cursor: pointer; }
@@ -420,6 +426,7 @@ main .main_content_area .main_content_right .personal_area .personal_item .perso
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content.honor .personal_content_item_table .personal_content_item_tr td:nth-child(3) { width: 25%; }
 
 @media screen and (min-width: 992px) { main .main_content_area .main_content_right { padding: 0 25px; }
+  main .main_content_area .main_content_right .personal_area .CV_btn_area .CV_btn_link { margin: 0 0 0 20px; }
   main .main_content_area .main_content_right .personal_area .personal_item { margin: 0 0 30px; }
   main .main_content_area .main_content_right .personal_area .personal_item .personal_content { overflow-x: auto; } }
 

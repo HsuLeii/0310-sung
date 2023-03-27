@@ -3,6 +3,24 @@ main {
     .main_content_area{
         .main_content_right{
             .personal_area{
+                .CV_btn_area{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin: 0 0 20px;
+                    .CV_btn_link{
+                        margin: 0 0 0 10px;
+                        padding: 5px 10px;
+                        color: $main_color;
+                        border: 1px solid $main_color;
+                        border-radius: 5px;
+
+                        &:hover{
+                            background-color: $main_color;
+                            color: $white;
+                        }
+                    }
+                }
                 .personal_item{
                     margin: 20px 0; 
                     .personal_tittle{
@@ -146,6 +164,11 @@ main {
             .main_content_right{
                 padding: 0 25px;
                 .personal_area{
+                    .CV_btn_area{
+                        .CV_btn_link{
+                            margin: 0 0 0 20px;
+                        }
+                    }
                     .personal_item{
                         margin: 0 0 30px;
                         .personal_content{
