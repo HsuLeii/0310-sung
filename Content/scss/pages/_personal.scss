@@ -148,6 +148,9 @@ main {
                 .personal_area{
                     .personal_item{
                         margin: 0 0 30px;
+                        .personal_content{
+                            overflow-x: auto;
+                        }
                     }
                 }
     

@@ -420,6 +420,7 @@ main .main_content_area .main_content_right .personal_area .personal_item .perso
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content.honor .personal_content_item_table .personal_content_item_tr td:nth-child(3) { width: 25%; }
 
 @media screen and (min-width: 992px) { main .main_content_area .main_content_right { padding: 0 25px; }
-  main .main_content_area .main_content_right .personal_area .personal_item { margin: 0 0 30px; } }
+  main .main_content_area .main_content_right .personal_area .personal_item { margin: 0 0 30px; }
+  main .main_content_area .main_content_right .personal_area .personal_item .personal_content { overflow-x: auto; } }
 
 main .main_content_area .main_content_right .sr_logo { width: 40%; max-width: 250px; margin: 0 auto; }
