@@ -385,22 +385,41 @@ main .main_content_area .main_content_right .personal_area .personal_item .perso
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_tittle .arrow.up { border-bottom: 8px solid #2f2f2f; border-top: 0px solid #2f2f2f; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content { padding: 20px 10px; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content { padding: 20px 0; overflow-x: scroll; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table { width: 100%; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table { width: 100%; min-width: 740px; margin: 10px 0; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table .personal_content_item_tr { display: flex; flex-direction: column; margin: 10px 0; padding: 5px 0; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead { background-color: #f2f2f2; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table .personal_content_item_tr:nth-child(even) { background-color: #f2f2f2; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead tr { margin: 10px 0; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table .personal_content_item_tr td { width: 100%; padding: 0 10px; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead tr td { padding: 10px; text-align: center; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr { margin: 10px 0; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr:nth-child(even) { background-color: #f2f2f2; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr td { width: 100%; padding: 10px; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table .personal_content_item_tr td:nth-child(1) { width: 55%; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table .personal_content_item_tr td:nth-child(2) { width: 20%; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table .personal_content_item_tr td:nth-child(3) { width: 25%; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.academic_services .personal_content_item_table .personal_content_item_tr td:nth-child(1) { width: 30%; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.academic_services .personal_content_item_table .personal_content_item_tr td:nth-child(2) { width: 45%; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.academic_services .personal_content_item_table .personal_content_item_tr td:nth-child(3) { width: 25%; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.honor .personal_content_item_table .personal_content_item_tr td:nth-child(1) { width: 25%; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.honor .personal_content_item_table .personal_content_item_tr td:nth-child(2) { width: 50%; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content.honor .personal_content_item_table .personal_content_item_tr td:nth-child(3) { width: 25%; }
 
 @media screen and (min-width: 992px) { main .main_content_area .main_content_right { padding: 0 25px; }
-  main .main_content_area .main_content_right .personal_area .personal_item { margin: 0 0 30px; }
-  main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table .personal_content_item_tr { flex-direction: row; }
-  main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table { width: 100%; }
-  main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table .personal_content_item_tr td:nth-child(1) { width: 55%; }
-  main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table .personal_content_item_tr td:nth-child(2) { width: 20%; }
-  main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table .personal_content_item_tr td:nth-child(3) { width: 25%; } }
+  main .main_content_area .main_content_right .personal_area .personal_item { margin: 0 0 30px; } }
 
 main .main_content_area .main_content_right .sr_logo { width: 40%; max-width: 250px; margin: 0 auto; }

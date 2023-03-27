@@ -34,20 +34,87 @@ main {
                         
                     }
                     .personal_content{
-                        padding: 20px 10px;
+                        padding: 20px 0;
+                        overflow-x: scroll;
                         .personal_content_item_table{
                             width: 100%;
-                            .personal_content_item_tr{
-                                display: flex;
-                                flex-direction: column;
-                                margin: 10px 0;
-                                padding: 5px 0;
-                                &:nth-child(even){
-                                    background-color: $light_grey;
+                            min-width: 740px;
+                            margin: 10px 0;
+                            thead{
+                                background-color: $light_grey;
+                                tr{
+                                    margin: 10px 0;
+                                    td{
+                                        padding: 10px;
+                                        text-align: center;
+                                    }
                                 }
-                                td{
-                                    width: 100%;
-                                    padding: 0 10px;
+                            }
+                            tbody{
+                                .personal_content_item_tr{
+                                    margin: 10px 0;
+                                    &:nth-child(even){
+                                        background-color: $light_grey;
+                                    }
+                                    td{
+                                        width: 100%;
+                                        padding: 10px;
+                                    }
+                                }
+                            }
+                            
+                        }
+
+                        &.learning_experience{
+                            .personal_content_item_table{
+                                .personal_content_item_tr{
+                                    td{
+                                        &:nth-child(1){
+                                            width: 55%;
+                                        }
+                                        &:nth-child(2){
+                                            width: 20%;
+                                        }
+                                        &:nth-child(3){
+                                            width: 25%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.academic_services{
+                            .personal_content_item_table{
+                                .personal_content_item_tr{
+                                    td{
+                                        &:nth-child(1){
+                                            width: 30%;
+                                        }
+                                        &:nth-child(2){
+                                            width: 45%;
+                                        }
+                                        &:nth-child(3){
+                                            width: 25%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.honor{
+                            .personal_content_item_table{
+                                .personal_content_item_tr{
+                                    td{
+                                        &:nth-child(1){
+                                            width: 25%;
+                                        }
+                                        &:nth-child(2){
+                                            width: 50%;
+                                        }
+                                        &:nth-child(3){
+                                            width: 25%;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -81,31 +148,6 @@ main {
                 .personal_area{
                     .personal_item{
                         margin: 0 0 30px;
-                        .personal_content{
-                            .personal_content_item_table{
-                                .personal_content_item_tr{
-                                    flex-direction: row;
-                                }
-                            }
-                            &.learning_experience{
-                                .personal_content_item_table{
-                                    width: 100%;
-                                    .personal_content_item_tr{
-                                        td{
-                                            &:nth-child(1){
-                                                width: 55%;
-                                            }
-                                            &:nth-child(2){
-                                                width: 20%;
-                                            }
-                                            &:nth-child(3){
-                                                width: 25%;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
     
