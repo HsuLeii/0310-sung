@@ -2,15 +2,54 @@ main {
 
     .main_content_area{
         .main_content_right{
-            .question_area{
-                .item_question{
-                    .faq_question{
+            .personal_area{
+                .personal_item{
+                    margin: 20px 0; 
+                    .personal_tittle{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $grey;
+                        padding: 10px 0;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: darken($grey, 5%);
+                        }
+
+                        h4{
+                            margin: 0 10px 0 0;
+                        }
                         .arrow{
                             display: inline-block;
                             border-width: 0px 8px 8px 8px;
                             border-left: 8px solid transparent;
                             border-right: 8px solid transparent;
                             border-top: 8px solid $black;
+                            &.up{
+                                    border-bottom: 8px solid $black;
+                                    border-top: 0px solid $black;
+                            }
+                        }
+                        
+                    }
+                    .personal_content{
+                        padding: 20px 10px;
+                        .personal_content_item_table{
+                            width: 100%;
+                            .personal_content_item_tr{
+                                display: flex;
+                                flex-direction: column;
+                                margin: 10px 0;
+                                padding: 5px 0;
+                                &:nth-child(even){
+                                    background-color: $light_grey;
+                                }
+                                td{
+                                    width: 100%;
+                                    padding: 0 10px;
+                                }
+                            }
                         }
                     }
                 }
@@ -34,7 +73,47 @@ main {
 }
 
 @media screen and (min-width: 992px) {
+    main {
+
+        .main_content_area{
+            .main_content_right{
+                padding: 0 25px;
+                .personal_area{
+                    .personal_item{
+                        margin: 0 0 30px;
+                        .personal_content{
+                            .personal_content_item_table{
+                                .personal_content_item_tr{
+                                    flex-direction: row;
+                                }
+                            }
+                            &.learning_experience{
+                                .personal_content_item_table{
+                                    width: 100%;
+                                    .personal_content_item_tr{
+                                        td{
+                                            &:nth-child(1){
+                                                width: 55%;
+                                            }
+                                            &:nth-child(2){
+                                                width: 20%;
+                                            }
+                                            &:nth-child(3){
+                                                width: 25%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
     
+                
+            }
+        }
+    
+    }
 }
 
 @media screen and (min-width: 1200px) {
