@@ -22,7 +22,7 @@ main {
                     }
                 }
                 .personal_item{
-                    margin: 20px 0; 
+                    margin: 0 0 8px; 
                     .personal_tittle{
                         display: flex;
                         align-items: center;
@@ -52,31 +52,25 @@ main {
                         
                     }
                     .personal_content{
-                        padding: 20px 0;
+                        padding: 25px 0;
                         overflow-x: scroll;
                         .personal_content_item_table{
                             width: 100%;
                             min-width: 740px;
-                            margin: 10px 0;
                             thead{
                                 background-color: $light_grey;
                                 tr{
-                                    margin: 10px 0;
                                     td{
-                                        padding: 10px;
+                                        padding: 8px 10px;
                                         text-align: center;
                                     }
                                 }
                             }
                             tbody{
                                 .personal_content_item_tr{
-                                    margin: 10px 0;
-                                    &:nth-child(even){
-                                        background-color: $light_grey;
-                                    }
                                     td{
                                         width: 100%;
-                                        padding: 10px;
+                                        padding: 8px 10px;
                                     }
                                 }
                             }
@@ -171,7 +165,6 @@ main {
                         }
                     }
                     .personal_item{
-                        margin: 0 0 30px;
                         .personal_content{
                             overflow-x: auto;
                         }

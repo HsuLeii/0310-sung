@@ -379,7 +379,7 @@ main .main_content_area .main_content_right .personal_area .CV_btn_area .CV_btn_
 
 main .main_content_area .main_content_right .personal_area .CV_btn_area .CV_btn_link:hover { background-color: #91252b; color: #fff; }
 
-main .main_content_area .main_content_right .personal_area .personal_item { margin: 20px 0; }
+main .main_content_area .main_content_right .personal_area .personal_item { margin: 0 0 8px; }
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_tittle { display: flex; align-items: center; justify-content: center; background-color: #f1f1f1; padding: 10px 0; cursor: pointer; }
 
@@ -391,21 +391,15 @@ main .main_content_area .main_content_right .personal_area .personal_item .perso
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_tittle .arrow.up { border-bottom: 8px solid #2f2f2f; border-top: 0px solid #2f2f2f; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content { padding: 20px 0; overflow-x: scroll; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content { padding: 25px 0; overflow-x: scroll; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table { width: 100%; min-width: 740px; margin: 10px 0; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table { width: 100%; min-width: 740px; }
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead { background-color: #f2f2f2; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead tr { margin: 10px 0; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead tr td { padding: 8px 10px; text-align: center; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead tr td { padding: 10px; text-align: center; }
-
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr { margin: 10px 0; }
-
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr:nth-child(even) { background-color: #f2f2f2; }
-
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr td { width: 100%; padding: 10px; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr td { width: 100%; padding: 8px 10px; }
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table .personal_content_item_tr td:nth-child(1) { width: 55%; }
 
@@ -428,7 +422,6 @@ main .main_content_area .main_content_right .personal_area .personal_item .perso
 @media screen and (min-width: 992px) { main .main_content_area .main_content_right { padding: 0 25px; }
   main .main_content_area .main_content_right .personal_area .CV_btn_area { margin: 0 0 40px; }
   main .main_content_area .main_content_right .personal_area .CV_btn_area .CV_btn_link { margin: 0 0 0 20px; }
-  main .main_content_area .main_content_right .personal_area .personal_item { margin: 0 0 30px; }
   main .main_content_area .main_content_right .personal_area .personal_item .personal_content { overflow-x: auto; } }
 
 main .main_content_area .main_content_right .sr_logo { width: 40%; max-width: 250px; margin: 0 auto; }
