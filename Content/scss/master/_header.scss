@@ -14,6 +14,7 @@ header {
 
         .container-fluid {
             padding: 8px 5%;
+            max-width: 1500px;
 
             .navbar-logo{
                 display: flex;
@@ -512,13 +513,14 @@ header {
             .container-fluid {
 
                 .navbar-logo{
-
+                    justify-content: center;
+                
                     img{
                         width: 45%;
                     }
 
                     span{
-                        margin: 0 15px;
+                        margin: 0 10px;
                         font-size: 20px;
                     }
 
@@ -546,6 +548,22 @@ header {
     }
 }
 
+@media screen and (min-width: 1400px) {
+    header {
+
+        .navbar {
+
+            .container-fluid {
+                
+                .navbar-collapse {
+                    justify-content: center;
+
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1600px) {
     header {
 
@@ -553,8 +571,12 @@ header {
 
             .container-fluid {
                 width: 80%;
+                .navbar-logo{
+                    justify-content: flex-start;
+                }
 
                 .navbar-collapse {
+                    
 
                     .nav-item {
 
