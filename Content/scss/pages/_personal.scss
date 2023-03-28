@@ -57,7 +57,6 @@ main {
                         .personal_content_item_table{
                             width: 100%;
                             min-width: 740px;
-                            margin: 0 0 50px;
                             thead{
                                 tr{
                                     td{
@@ -73,7 +72,9 @@ main {
                                     }
                                 }
                             }
-                            
+                            &.teaching_table{
+                                margin: 0 0 50px;
+                            }
                         }
 
                         &.learning_experience{

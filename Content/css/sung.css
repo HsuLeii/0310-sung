@@ -335,7 +335,7 @@ main .index_area .index_area_content .index_area_left .index_area_slide .slide .
 
 main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide img { padding: 15px; background-color: #fff; border-radius: 5px; border: 1px solid #f1f1f1; }
 
-main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide .slide_index_text { position: absolute; bottom: 15px; width: calc(100% - 30px); left: 50%; transform: translate(-50%, 0px); background-color: rgba(47, 47, 47, 0.6); padding: 5px 10px; }
+main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide .slide_index_text { position: absolute; bottom: 15px; width: calc(100% - 32px); left: 50%; transform: translate(-50%, 0px); background-color: rgba(47, 47, 47, 0.6); padding: 5px 10px; }
 
 main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide .slide_index_text p { color: #fff; text-align: center; }
 
@@ -355,21 +355,14 @@ main .index_area .index_area_content .index_area_left .index_area_text_area .ind
 
 main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_material .index_area_text_information .information_link_area { display: flex; }
 
-@media screen and (min-width: 1024px) { main .index_area { background-image: url(../image/photo/index/index_bg.jpg); background-position: center; background-size: cover; }
-  main .index_area .index_area_content { max-width: 1200px; margin: 0 auto; }
-  main .index_area .index_area_content .index_area_left { width: 57.5%; padding: 160px 0 85px; margin: 0 0 0 40px; }
-  main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper { height: auto; }
-  main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide img { padding: 15px; background-color: #fff; border-radius: 5px; border: 1px solid #f1f1f1; }
-  main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide .slide_index_text { position: absolute; bottom: 15px; width: calc(100% - 30px); left: 50%; transform: translate(-50%, 0px); background-color: rgba(47, 47, 47, 0.6); padding: 5px 10px; }
-  main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-wrapper .swiper-slide .slide_index_text p { color: #fff; text-align: center; }
-  main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-pagination { position: inherit; bottom: auto; left: auto; margin: 15px 0 0; }
-  main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-pagination .swiper-pagination-bullet { background-color: rgba(47, 47, 47, 0.3); opacity: 1; width: 15px; height: 15px; }
-  main .index_area .index_area_content .index_area_left .index_area_slide .slide .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: rgba(47, 47, 47, 0.5); }
+@media screen and (min-width: 1024px) { main .index_area .index_area_content .index_area_left { width: 57.5%; padding: 160px 0 85px; margin: 0 0 0 40px; }
   main .index_area .index_area_content .index_area_left .index_area_text_area { display: flex; align-items: center; margin: 60px 0 0; }
   main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_name { margin: 0 60px 0 0; }
-  main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_name .big_name { font-size: 48px; }
+  main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_name .big_name { font-size: 44px; }
   main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_material .index_area_text_experience { margin: 0 0 25px; }
   main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_material .index_area_text_information .information_link_area { display: flex; } }
+
+@media screen and (min-width: 1200px) { main .index_area .index_area_content .index_area_left .index_area_text_area .index_area_text_name .big_name { font-size: 51px; } }
 
 @media screen and (min-width: 1400px) { main .index_area .index_area_content .index_area_left { margin: 0; } }
 
@@ -393,11 +386,13 @@ main .main_content_area .main_content_right .personal_area .personal_item .perso
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content { padding: 25px 0; overflow-x: scroll; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table { width: 100%; min-width: 740px; margin: 0 0 50px; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table { width: 100%; min-width: 740px; }
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead tr td { padding: 8px 10px; }
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr td { width: 100%; padding: 8px 10px; }
+
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table.teaching_table { margin: 0 0 50px; }
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content.learning_experience .personal_content_item_table .personal_content_item_tr td:nth-child(1) { width: 55%; }
 

@@ -30,7 +30,7 @@ main {
                                     .slide_index_text {
                                         position: absolute;
                                         bottom: 15px;
-                                        width: calc(100% - 30px);
+                                        width: calc(100% - 32px);
                                         left: 50%;
                                         transform: translate(-50%, 0px);
                                         background-color: rgba($black, 0.6);
@@ -104,69 +104,13 @@ main {
     main {
 
         .index_area {
-            background-image: url(../image/photo/index/index_bg.jpg);
-            background-position: center;
-            background-size: cover;
     
             .index_area_content {
-                max-width: 1200px;
-                margin: 0 auto;
     
                 .index_area_left {
                     width: 57.5%;
                     padding: 160px 0 85px;
                     margin: 0 0 0 40px;
-    
-                    .index_area_slide {
-                        .slide {
-                            .swiper {
-                                .swiper-wrapper {
-                                    height: auto;
-    
-                                    .swiper-slide {
-                                        img {
-                                            padding: 15px;
-                                            background-color: $white;
-                                            border-radius: 5px;
-                                            border: 1px solid $grey;
-                                        }
-    
-                                        .slide_index_text {
-                                            position: absolute;
-                                            bottom: 15px;
-                                            width: calc(100% - 30px);
-                                            left: 50%;
-                                            transform: translate(-50%, 0px);
-                                            background-color: rgba($black, 0.6);
-                                            padding: 5px 10px;
-    
-                                            p {
-                                                color: $white;
-                                                text-align: center;
-                                            }
-                                        }
-                                    }
-                                }
-    
-                                .swiper-pagination {
-                                    position: inherit;
-                                    bottom: auto;
-                                    left: auto;
-                                    margin: 15px 0 0;
-    
-                                    .swiper-pagination-bullet{
-                                        background-color: rgba($black, 0.3);
-                                        opacity: 1;
-                                        width: 15px;
-                                        height: 15px;
-                                        &.swiper-pagination-bullet-active{
-                                            background-color: rgba($black, 0.5);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
     
                     .index_area_text_area{
                         display: flex;
@@ -177,7 +121,7 @@ main {
                             margin: 0 60px 0 0;
     
                             .big_name{
-                                font-size: 48px;
+                                font-size: 44px;
                             }
                         }
     
@@ -197,7 +141,31 @@ main {
     
         }
     }
+}
 
+@media screen and (min-width: 1200px) {
+    main {
+
+        .index_area {
+    
+            .index_area_content {
+    
+                .index_area_left {
+
+                    .index_area_text_area{
+    
+                        .index_area_text_name{
+    
+                            .big_name{
+                                font-size: 51px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
 }
 
 @media screen and (min-width: 1400px) {
