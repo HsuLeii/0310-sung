@@ -393,11 +393,9 @@ main .main_content_area .main_content_right .personal_area .personal_item .perso
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content { padding: 25px 0; overflow-x: scroll; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table { width: 100%; min-width: 740px; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table { width: 100%; min-width: 740px; margin: 0 0 50px; }
 
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead { background-color: #f2f2f2; }
-
-main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead tr td { padding: 8px 10px; text-align: center; }
+main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table thead tr td { padding: 8px 10px; }
 
 main .main_content_area .main_content_right .personal_area .personal_item .personal_content .personal_content_item_table tbody .personal_content_item_tr td { width: 100%; padding: 8px 10px; }
 

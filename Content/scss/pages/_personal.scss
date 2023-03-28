@@ -57,12 +57,11 @@ main {
                         .personal_content_item_table{
                             width: 100%;
                             min-width: 740px;
+                            margin: 0 0 50px;
                             thead{
-                                background-color: $light_grey;
                                 tr{
                                     td{
                                         padding: 8px 10px;
-                                        text-align: center;
                                     }
                                 }
                             }
