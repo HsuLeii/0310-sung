@@ -117,13 +117,22 @@ header {
                             color: $main_color;
                             font-weight: bold;
                         }
+
+                        .dropdown-menu-theme{
+                            .dropdown-menu-theme-content{
+                                .nav-link{
+                                    color: $black;
+                                    border-bottom: 0px;
+                                }
+                            }
+                        }
                     }
 
                     .nav-link {
                         color: $black;
                         padding: 20px 0px 10px 10px;
                         position: relative;
-
+                        
                     }
 
                     .dropdown-toggle {

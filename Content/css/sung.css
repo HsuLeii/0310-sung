@@ -129,6 +129,8 @@ header .navbar .container-fluid .navbar-collapse .nav-item.nowPage { border-bott
 
 header .navbar .container-fluid .navbar-collapse .nav-item.nowPage .nav-link { color: #91252b; font-weight: bold; }
 
+header .navbar .container-fluid .navbar-collapse .nav-item.nowPage .dropdown-menu-theme .dropdown-menu-theme-content .nav-link { color: #2f2f2f; border-bottom: 0px; }
+
 header .navbar .container-fluid .navbar-collapse .nav-item .nav-link { color: #2f2f2f; padding: 20px 0px 10px 10px; position: relative; }
 
 header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-toggle { padding: 20px 30px 10px 10px; position: relative; }
@@ -306,11 +308,16 @@ main .main_content_area.single_area .main_content_right { width: 100%; }
   .slide.slide_page .slide_page_area .slide_figure { display: block; width: 260px; }
   main .main_content_area { display: flex; justify-content: center; background-color: transparent; padding: 0; width: 90%; transform: translate(-115px, 0px); }
   main .main_content_area .main_content_left { display: flex; justify-content: center; width: 230px; padding: 60px 40px 60px 0; }
+  main .main_content_area .main_content_left .main_content_left_ul { display: flex; flex-direction: column; align-items: flex-end; }
   main .main_content_area .main_content_left .main_content_left_ul li { margin: 10px 0; }
   main .main_content_area .main_content_left .main_content_left_ul li .main_content_left_link { position: relative; }
   main .main_content_area .main_content_left .main_content_left_ul li .main_content_left_link.active, main .main_content_area .main_content_left .main_content_left_ul li .main_content_left_link:hover { color: #91252b; }
   main .main_content_area .main_content_left .main_content_left_ul li .main_content_left_link.active::after { position: absolute; font-family: 'Font Awesome 5 Free'; color: #91252b; font-weight: 900; content: "\f0de"; top: 50%; margin: 0 0 0 5px; font-size: 15px; transform: translate(0px, -50%) rotate(90deg); }
   main .main_content_area .main_content_right { width: calc(100% - 345px); max-width: 1200px; background-color: #fff; margin: 0; } }
+
+@media screen and (min-width: 1400px) { .slide.slide_page .slide_page_area { justify-content: space-between; padding: 0; }
+  .slide.slide_page .slide_page_area .slide_title { padding: 80px 0 80px 80px; }
+  .slide.slide_page .slide_page_area .slide_figure { margin: 0 180px 0 0; } }
 
 main .index_area { background-image: url(../image/photo/index/index_bg.jpg); background-position: center; background-size: cover; }
 
