@@ -1,0 +1,58 @@
+main {
+
+    .main_content_area{
+        .main_content_right{
+            .main_content_text_item{
+                .list_text_item{
+                    margin: 0 0 45px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (min-width: 500px) {
+    
+}
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    main {
+
+        .main_content_area{
+            .main_content_right{
+                .personal_area{
+                    .CV_btn_area{
+                        margin: 0 0 40px;
+                        .CV_btn_link{
+                            margin: 0 0 0 20px;
+                        }
+                    }
+                    .personal_item{
+                        .personal_content{
+                            overflow-x: auto;
+                        }
+                    }
+                }
+                
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+
+@media screen and (min-width: 1400px) {
+
+}
