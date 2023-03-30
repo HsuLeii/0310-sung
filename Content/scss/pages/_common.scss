@@ -3,7 +3,7 @@
 
     // 個人經歷
     &.slide_personal {
-        background-color: #ffaa65;
+        background-color: $slide_personal;
         background-image: url(../image/slide/slide_personal.png);
         background-position: center;
         background-size: cover;
@@ -11,7 +11,7 @@
 
     // 研究成果
     &.slide_research {
-        background-color: #7fdefd;
+        background-color: $slide_research;
         background-image: url(../image/slide/slide_research.png);
         background-position: center;
         background-size: cover;
@@ -19,7 +19,7 @@
 
     // 實驗室簡介
     &.slide_laboratory {
-        background-color: #b7cc57;
+        background-color: $slide_laboratory;
         background-image: url(../image/slide/slide_laboratory.png);
         background-position: center;
         background-size: cover;
@@ -27,7 +27,7 @@
 
     // 社會貢獻
     &.slide_society {
-        background-color: #77c6c9;
+        background-color: $slide_society;
         background-image: url(../image/slide/slide_society.png);
         background-position: center;
         background-size: cover;
@@ -66,6 +66,13 @@ main {
         .main_content_right {
             padding: 20px 10px;
 
+            .text_item_link{
+                &:hover{
+                    color: $main_color;
+                    text-decoration: underline;
+                }
+            }
+
             .main_content_text_item {
                 margin: 0 0 40px;
 
@@ -98,10 +105,71 @@ main {
             .main_content_img_item{
                 margin: 40px auto;
             }
+
+            .switch_item{
+                margin: 0 0 8px; 
+                .switch_tittle{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $grey;
+                    padding: 10px 0;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: darken($grey, 5%);
+                    }
+
+                    h4{
+                        margin: 0 10px 0 0;
+                    }
+                    .arrow{
+                        display: inline-block;
+                        border-width: 0px 8px 8px 8px;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-top: 8px solid $black;
+                        &.up{
+                                border-bottom: 8px solid $black;
+                                border-top: 0px solid $black;
+                        }
+                    }
+                    
+                }
+                .switch_content{
+                    padding: 25px 0;
+
+                    .switch_content_item{
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        padding: 8px 0;
+                        .switch_content_item_text{
+                            margin: 0 10px 0 0;
+                        }
+
+                        .switch_content_item_btn{
+                            padding: 1px 10px;
+                            margin: 5px 10px 5px 0;
+                            background-color: $light_grey;
+                            border: 1px solid $black;
+                            border-radius: 5px;
+
+                            &:hover{
+                                background-color: $grey;
+                                a{
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         // 單邊
         &.single_area{
+            transform: translate(0);
             .main_content_right {
                 width: 100%;
             }
@@ -132,8 +200,9 @@ main {
         .main_content_area{
             padding: 0;
             .main_content_right{
-                padding: 60px 40px;
+                padding: 60px 50px;
                 margin: 0 auto;
+                
             }
         }
     
@@ -175,18 +244,21 @@ main {
             background-color: transparent;
             padding: 0;
             width: 90%;
-            transform: translate(-115px, 0px);
+            transform: translate(-155px, 0px);
 
             .main_content_left {
                 display: flex;
-                justify-content: center;
-                width: 230px;
-                padding: 60px 40px 60px 0;
+                justify-content: flex-start;
+                flex-direction: column;
+                width: 310px;
+                padding: 60px 0;
+                margin: 0 40px;
 
                 .main_content_left_ul {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
+                    margin: 0 0 50px;
                     li {
                         margin: 10px 0;
 
@@ -214,12 +286,16 @@ main {
                             }
 
                         }
+
+                        &.main_content_left_link_tittle{
+                            margin: 0 0 10px;
+                        }
                     }
                 }
             }
 
             .main_content_right {
-                width: calc(100% - 345px);
+                width: calc(100% - 505px);
                 max-width: 1200px;
                 background-color: $white;
                 margin: 0;

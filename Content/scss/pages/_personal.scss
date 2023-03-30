@@ -21,40 +21,11 @@ main {
                         }
                     }
                 }
-                .personal_item{
-                    margin: 0 0 8px; 
-                    .personal_tittle{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: $grey;
-                        padding: 10px 0;
-                        cursor: pointer;
-
-                        &:hover{
-                            background-color: darken($grey, 5%);
-                        }
-
-                        h4{
-                            margin: 0 10px 0 0;
-                        }
-                        .arrow{
-                            display: inline-block;
-                            border-width: 0px 8px 8px 8px;
-                            border-left: 8px solid transparent;
-                            border-right: 8px solid transparent;
-                            border-top: 8px solid $black;
-                            &.up{
-                                    border-bottom: 8px solid $black;
-                                    border-top: 0px solid $black;
-                            }
-                        }
-                        
-                    }
-                    .personal_content{
-                        padding: 25px 0;
+                .switch_item{
+                    .switch_content{
                         overflow-x: scroll;
-                        .personal_content_item_table{
+
+                        .switch_content_item_table{
                             width: 100%;
                             min-width: 740px;
                             thead{
@@ -65,7 +36,7 @@ main {
                                 }
                             }
                             tbody{
-                                .personal_content_item_tr{
+                                .switch_content_item_tr{
                                     td{
                                         width: 100%;
                                         padding: 8px 10px;
@@ -78,8 +49,8 @@ main {
                         }
 
                         &.learning_experience{
-                            .personal_content_item_table{
-                                .personal_content_item_tr{
+                            .switch_content_item_table{
+                                .switch_content_item_tr{
                                     td{
                                         &:nth-child(1){
                                             width: 55%;
@@ -96,8 +67,8 @@ main {
                         }
 
                         &.academic_services{
-                            .personal_content_item_table{
-                                .personal_content_item_tr{
+                            .switch_content_item_table{
+                                .switch_content_item_tr{
                                     td{
                                         &:nth-child(1){
                                             width: 30%;
@@ -114,8 +85,8 @@ main {
                         }
 
                         &.honor{
-                            .personal_content_item_table{
-                                .personal_content_item_tr{
+                            .switch_content_item_table{
+                                .switch_content_item_tr{
                                     td{
                                         &:nth-child(1){
                                             width: 25%;
@@ -163,13 +134,13 @@ main {
                             margin: 0 0 0 20px;
                         }
                     }
-                    .personal_item{
-                        .personal_content{
+
+                    .switch_item{
+                        .switch_content{
                             overflow-x: auto;
                         }
                     }
                 }
-                
             }
         }
     
