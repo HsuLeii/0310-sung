@@ -6,6 +6,16 @@ main {
                 .list_text_item{
                     margin: 0 0 45px;
                 }
+                .main_content_text_content{
+                    .list_text_item{
+                        .list_text_item_title{
+                            padding: 10px 0;
+                        }
+                        .list_text_item_text{
+                            padding: 10px 0;
+                        }
+                    }
+                }
             }
         }
     }
@@ -20,39 +30,78 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    
-}
-
-@media screen and (min-width: 992px) {
     main {
 
         .main_content_area{
             .main_content_right{
-                .personal_area{
-                    .CV_btn_area{
-                        margin: 0 0 40px;
-                        .CV_btn_link{
-                            margin: 0 0 0 20px;
-                        }
+                .main_content_text_item{
+                    .list_text_item{
+                        margin: 0 0 45px;
                     }
-                    .personal_item{
-                        .personal_content{
-                            overflow-x: auto;
+                    .main_content_text_content{
+                        .main_content_text_content_left_right{
+                            display: flex;
+                            justify-content: space-between;
+                            .main_content_text_content_left,
+                            .main_content_text_content_right{
+                                width: 50%;
+                                padding: 0 2.5%;
+                            }
                         }
                     }
                 }
-                
             }
         }
     
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
+}
 
+@media screen and (min-width: 1200px) {
+    main {
+
+        .main_content_area{
+            .main_content_right{
+                .main_content_text_item{
+                    .main_content_text_content{
+                        .main_content_text_content_left_right{
+                            flex-direction: column;
+                            .main_content_text_content_left,
+                            .main_content_text_content_right{
+                                width: 100%;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
 }
 
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
+    main {
 
+        .main_content_area{
+            .main_content_right{
+                .main_content_text_item{
+                    .main_content_text_content{
+                        .main_content_text_content_left_right{
+                            flex-direction: row;
+                            .main_content_text_content_left,
+                            .main_content_text_content_right{
+                                width: 50%;
+                                padding: 0 5%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
 }
