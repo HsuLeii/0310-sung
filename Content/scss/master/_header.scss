@@ -390,10 +390,9 @@ header {
                             position: absolute;
                             width: max-content;
                             background-color: $white;
-                            left: 50%;
                             right: 0;
                             top: calc(100% - 22px);
-                            transform: translate(-50%, 0px);
+                            transform: translate(0%, 0px);
                             margin-top: 0;
 
                             li {
@@ -463,6 +462,16 @@ header {
                 .navbar-collapse {
                     justify-content: center;
 
+                    .nav-item {
+
+                        .dropdown-menu {
+                            right: auto;
+                            left: 50%;
+                            transform: translate(-50%, 0px);
+                        }
+
+                    }
+
                 }
             }
         }
@@ -483,14 +492,12 @@ header {
 
                 .navbar-collapse {
 
-
                     .nav-item {
 
                         .nav-link {
                             margin: 20px;
                             padding: 5px 0;
                         }
-
                     }
 
                 }
