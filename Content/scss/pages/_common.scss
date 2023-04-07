@@ -78,6 +78,9 @@ main {
 
                 .main_content_text_tittle {
                     margin: 0 0 10px;
+                    &.text_space{
+                        text-indent: 2em;
+                    }
                 }
 
                 .main_content_text_content{
@@ -89,14 +92,32 @@ main {
                     }
                     
                     .text_around_area{
-                        margin: 20px 0;
+                        margin: 0 0 40px;
                         .text_around_img{
-                            margin: 10px;
-                            float: right;
+                            margin: 0 10px;
                             &.text_around_img_laboratory{
-                                width: 50%;
-                                max-width: 350px;
+                                width: 30%;
+                                max-width: 250px;
                             }
+                            &.float_right{
+                                float: right;
+                            }
+                            &.float_left{
+                                float: left;
+                            }
+                        }
+                    }
+
+                    .row_layout_area{
+                        display: flex;
+                        flex-direction: column;
+                        .row_layout_img{
+                            width: 100%;
+                            max-width: 250px;
+                            margin: 0 auto 30px;
+                        }
+                        .row_layout_area_right{
+                            width: 100%;
                         }
                     }
                 }
@@ -189,6 +210,32 @@ main {
         .slide_page_area{
             .slide_title {
                 padding: 80px 10%;
+            }
+        }
+    }
+
+    main {
+    
+        .main_content_area {
+    
+            .main_content_right {
+    
+                .main_content_text_item {
+    
+                    .main_content_text_content{
+    
+                        .row_layout_area{
+                            flex-direction: row;
+                            .row_layout_img{
+                                width: calc(25% - 30px);
+                                margin: 0 30px 0 0;
+                            }
+                            .row_layout_area_right{
+                                width: 75%;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -299,6 +346,23 @@ main {
                 max-width: 1200px;
                 background-color: $white;
                 margin: 0;
+
+                .main_content_text_item {
+    
+                    .main_content_text_content{
+                        
+                        .row_layout_area{
+                            flex-direction: column;
+                            .row_layout_img{
+                                width: 100%;
+                                margin: 0 auto 30px;
+                            }
+                            .row_layout_area_right{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
             }
 
 
@@ -325,6 +389,102 @@ main {
                 }
             }
             
+        }
+    }
+
+    main {
+        .main_content_area {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            padding: 0;
+            width: 90%;
+            transform: translate(-155px, 0px);
+
+            .main_content_left {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                width: 310px;
+                padding: 60px 0;
+                margin: 0 40px;
+
+                .main_content_left_ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin: 0 0 50px;
+                    li {
+                        margin: 0 0 20px;
+
+                        .main_content_left_link {
+
+                            &.active,
+                            &:hover {
+                                color: $main_color;
+                            }
+
+                            position: relative;
+
+                            &.active {
+                                &::after {
+                                    position: absolute;
+                                    font-family: 'Font Awesome 5 Free';
+                                    color: $main_color;
+                                    font-weight: 900;
+                                    content: "\f0de";
+                                    top: 50%;
+                                    margin: 0 0 0 5px;
+                                    font-size: 15px;
+                                    transform: translate(0px, -50%) rotate(90deg);
+                                }
+                            }
+
+                        }
+
+                        &.main_content_left_link_tittle{
+                            margin: 0 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    main {
+        .main_content_area {
+
+            .main_content_right {
+
+                .main_content_text_item {
+    
+                    .main_content_text_content{
+                        .text_around_area{
+                            .text_around_img{
+                                &.text_around_img_laboratory{
+                                    width: 50%;
+                                }
+                            }
+                        }
+    
+                        .row_layout_area{
+                            flex-direction: row;
+                            .row_layout_img{
+                                width: calc(25% - 30px);
+                                margin: 0 30px 0 0;
+                            }
+                            .row_layout_area_right{
+                                width: 75%;
+                            }
+                        }
+                    }
+                }
+            }
+
+
         }
     }
 }
