@@ -160,11 +160,16 @@ main {
                 .switch_content{
                     padding: 25px 0;
 
+                    li{
+                        list-style-type: disc !important;
+                    }
+
                     .switch_content_item{
                         display: flex;
                         align-items: center;
                         flex-wrap: wrap;
                         padding: 8px 0;
+                        
                         .switch_content_item_text{
                             margin: 0 10px 0 0;
                         }

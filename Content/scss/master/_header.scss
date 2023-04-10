@@ -216,6 +216,20 @@ header {
                                 }
                             }
                         }
+                        
+                    }
+
+                    .dropdownBg {
+                        transition: all .5s cubic-bezier(0.43, 0.05, 0.17, 1);
+                        position: fixed;
+                        z-index: -1;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        background: $dropdownBg;
+                        visibility: hidden;
+                        opacity: 0;
                     }
                 }
 
@@ -309,6 +323,7 @@ header {
                     .navbar-nav {
                         flex-direction: column;
                     }
+                    
                 }
             }
         }
@@ -398,6 +413,13 @@ header {
                             li {
                                 .dropdown-item {
                                     white-space: initial;
+                                }
+                            }
+
+                            &.show {
+                                &~.dropdownBg {
+                                    opacity: 1;
+                                    visibility: visible;
                                 }
                             }
 
