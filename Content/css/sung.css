@@ -84,7 +84,7 @@ body { background-color: #f0f2f2; }
 
 header { position: relative; display: flex; align-items: center; justify-content: space-between; width: 100%; top: 0; z-index: 3; background-color: #fff; }
 
-header .navbar { width: 100%; padding: 0; }
+header .navbar { width: 100%; padding: 0; background-color: #fff; z-index: 1; }
 
 header .navbar .container-fluid { padding: 8px 5%; max-width: 1500px; }
 
@@ -154,7 +154,7 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdo
 
 header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content .nav-link.dropdown-toggle:hover { color: #2f2f2f; }
 
-header .navbar .container-fluid .navbar-collapse .nav-item .dropdownBg { transition: all 0.5s cubic-bezier(0.43, 0.05, 0.17, 1); position: fixed; z-index: -1; width: 100%; height: 100%; left: 0; top: 0; background: #33333326; visibility: hidden; opacity: 0; }
+header .dropdownBg { transition: all 0.5s cubic-bezier(0.43, 0.05, 0.17, 1); position: fixed; z-index: -1; width: 100%; height: 100%; left: 0; top: 0; background: #00000099; visibility: hidden; opacity: 0; }
 
 header.fixed_header { border-bottom: 1.5px solid #91252b; box-shadow: 2px 9px 46px 0px #2f2f2f1f; position: fixed; }
 
@@ -190,8 +190,8 @@ header.header_index { background-color: transparent; position: absolute; }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-toggle::after { display: none; }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu { position: absolute; width: max-content; background-color: #fff; right: 0; top: calc(100% - 22px); transform: translate(0%, 0px); margin-top: 0; }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu li .dropdown-item { white-space: initial; }
-  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.show ~ .dropdownBg { opacity: 1; visibility: visible; }
-  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content .nav-link:hover::before { display: none; } }
+  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content .nav-link:hover::before { display: none; }
+  header .dropdownBg.show { opacity: 1; visibility: visible; } }
 
 @media screen and (min-width: 1200px) { header .navbar .container-fluid .navbar-logo { justify-content: center; }
   header .navbar .container-fluid .navbar-logo img { width: 45%; }
