@@ -311,7 +311,7 @@ main .main_content_area .main_content_right .main_content_img_item { margin: 40p
 
 main .main_content_area .main_content_right .switch_item { margin: 0 0 8px; }
 
-main .main_content_area .main_content_right .switch_item .switch_tittle { display: flex; align-items: center; justify-content: center; background-color: #f1f1f1; padding: 10px 0; cursor: pointer; }
+main .main_content_area .main_content_right .switch_item .switch_tittle { display: flex; align-items: center; justify-content: center; background-color: #f1f1f1; padding: 10px; cursor: pointer; }
 
 main .main_content_area .main_content_right .switch_item .switch_tittle:hover { background-color: #e4e4e4; }
 
