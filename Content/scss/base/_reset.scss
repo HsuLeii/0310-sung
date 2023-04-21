@@ -35,13 +35,13 @@ figure {
 
 h1 {
     font-size: 29px;
-    line-height: 1.7;
+    line-height: 1.5;
     font-weight: bold;
 }
 
 h3 {
     font-size: 27px;
-    line-height: 1.7;
+    line-height: 1.5;
     font-weight: bold;
 }
 
@@ -59,12 +59,12 @@ h4 {
 
 h5 {
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 p {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 span,
@@ -76,13 +76,13 @@ select,
 option {
     font-size: 14px;
     text-decoration: none;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 a {
     font-size: 14px;
     text-decoration: none;
-    line-height: 1.7;
+    line-height: 1.5;
 
     &:active {
         border-style: none;
@@ -106,7 +106,7 @@ rt {
 input,
 label {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 input[type=file]::file-selector-button {

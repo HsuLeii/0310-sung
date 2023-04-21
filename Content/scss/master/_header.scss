@@ -248,6 +248,9 @@ header {
     &.header_index {
         background-color: transparent;
         position: absolute;
+        .navbar{
+            background-color: transparent;
+        }
     }
 }
 
