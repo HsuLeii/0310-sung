@@ -64,6 +64,40 @@
                 </ul>
             </div>
             <div class="main_content_right">
+
+                <div class="team_member_area">
+
+                    <div class="team_member_area_item">
+                        <div class="team_member_area_item_img">
+                            <img src="Content/image/photo/laboratory/readability/team_member_1.png" alt="">
+                        </div>
+                        <div class="team_member_area_item_text">
+                            <h5>名字</h5>
+                            <p>
+                                畢業於國立台灣師範大學<br />
+                                教育心理學專業
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team_member_area_item">
+                        <div class="team_member_area_item_img">
+                            <img src="Content/image/photo/laboratory/readability/team_member_1.png" alt="">
+                        </div>
+                        <div class="team_member_area_item_text">
+                            <h5>名字</h5>
+                            <p>
+                                畢業於國立台灣師範大學<br />
+                                教育心理學專業
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="team_member_btn">
+                        <p id="team_member_btn_text" class="team_member_btn_text">顯示更多成員</p>
+                    </button>
+
+                </div>
+
                 <div class="main_content_text_item">
                     <div class="main_content_text_tittle main_content_text_tittle_center">
                         <h4>教師專業研究團隊</h4>
@@ -147,10 +181,11 @@
 
                         <p class="text_content_paragraph text_space">
                             工作價值觀是穩定的心理系統，能有效解釋並預測個人在不同工作環境下的特質與行為。若是能夠找到師資生選擇教師職業的重要動機，則可能使師資生在未來能全心投入教師工作。個人若是以教師工作為職業志向，則應具備有教師應有的信念，在面對教育現場之繁雜工作環境時，將仍能對教師工作保持高度工作動機。
-                            <br/>
+                            <br />
                             測驗編製採取口語資料分析法，將優良教師焦點團體所審定的工作價值觀進行歸類，進行量表編製。即時個人報表提供了豐富訊息，包含個人在各個教師工作價值觀類型的平均分數以及百分等級，以及針對測驗結果所提供的建議。
-                            <br/>
-                            在測驗分數的信度與效度驗證方面，各向度分數內部一致性信度為 .80 - .91；驗證性因素分析結果具良好模型配適度，各題目因素負荷量為 .47 - .81，顯示教師工作價值觀測驗分數具有好的信度與效度證據。
+                            <br />
+                            在測驗分數的信度與效度驗證方面，各向度分數內部一致性信度為 .80 - .91；驗證性因素分析結果具良好模型配適度，各題目因素負荷量為 .47 -
+                            .81，顯示教師工作價值觀測驗分數具有好的信度與效度證據。
                         </p>
                     </div>
                 </div>
@@ -162,14 +197,16 @@
                         </p>
                         <p class="text_content_paragraph text_space">
                             人格特質是長期穩定的屬性，能夠預測個人的思考、情緒、傾向及行為。若人格特質測驗使用於師資生甄選階段，除了能甄選出更為適任的師資生，也能幫助學生做出正確職涯選擇。
-                            <br/>
-                            教師人格測驗以五大人格理論為基礎， 採用「惟視量尺 (VAS-RRP)）」之作答形式，同時具備多點量表的特性，也兼具排序與比較性，能有效改善受測者因社會期許及印象整飾等目的，而在測驗產生結果失真的現象。即時個人報表提供了豐富訊息，包含受測者的教師人格特質描述、歸納於五大人格類型的平均分數與百分等級、以及各向度的平均分數與百分等級，並針對測驗結果提供建議。
-                            <br/>
-                            在測驗分數的信度與效度驗證方面，各向度分數內部一致性信度為 .74 - .91；驗證性因素分析結果具有可接受的模型配適度，題目因素負荷量為 .56 - .99，顯示教師人格測驗分數具有好的信度與效度證據。
+                            <br />
+                            教師人格測驗以五大人格理論為基礎， 採用「惟視量尺
+                            (VAS-RRP)）」之作答形式，同時具備多點量表的特性，也兼具排序與比較性，能有效改善受測者因社會期許及印象整飾等目的，而在測驗產生結果失真的現象。即時個人報表提供了豐富訊息，包含受測者的教師人格特質描述、歸納於五大人格類型的平均分數與百分等級、以及各向度的平均分數與百分等級，並針對測驗結果提供建議。
+                            <br />
+                            在測驗分數的信度與效度驗證方面，各向度分數內部一致性信度為 .74 - .91；驗證性因素分析結果具有可接受的模型配適度，題目因素負荷量為 .56 -
+                            .99，顯示教師人格測驗分數具有好的信度與效度證據。
                         </p>
                     </div>
 
-                    
+
                 </div>
 
                 <div class="main_content_img_item main_content_img_item_600">
@@ -202,6 +239,33 @@
             $("footer").load("footer.html", function () {});
         });
     </script>
+
+    <!-- 成員顯示按鈕開始 -->
+    <script>
+        var showMember = 6;
+        $('.team_member_area_item').filter(':lt(' + showMember + ')').addClass("show");
+
+        var memberLength = $(".team_member_area_item").length;
+        if (memberLength > 6) {
+            $('.team_member_btn').css("display", "flex");
+            $('.team_member_btn').click(function () {
+                var playText = document.getElementById("team_member_btn_text");
+                if (playText.innerHTML === "顯示更多成員") {
+                    playText.innerHTML = "顯示較少成員";
+                    $('.team_member_area_item').addClass("show");
+                    $('.team_member_btn_text').addClass("up");
+                } else {
+                    playText.innerHTML = "顯示更多成員";
+                    $('.team_member_area_item').removeClass("show");
+                    $('.team_member_area_item').filter(':lt(' + showMember + ')').addClass("show");
+                    $('.team_member_btn_text').removeClass("up");
+                }
+            });
+        } else {
+            $('.team_member_btn').css("display", "none");
+        }
+    </script>
+    <!-- 成員顯示按鈕結束 -->
 
 </body>
 

@@ -54,69 +54,79 @@
     </div>
     <main>
         <div class="main_content_area">
-            <div class="main_content_left">
-                <ul class="main_content_left_ul">
-                    <li class="main_content_left_link_tittle">
-                        <h3>
-                            研究應用
-                        </h3>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link active" href="society_readability.html">SmartReading適性閱讀
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">職涯測驗
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">DECE英語診斷
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">PASSION補救教學
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">PASSION偏鄉優質教育學分學程
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">自然光眼動儀
-                        </a>
-                    </li>
+            <div class="main_content_left main_content_left_society">
+                <ul class="main_content_left_ul society_ul">
+                    <div class="society_li">
+                        <li class="main_content_left_link_tittle">
+                            <h3>
+                                研究應用
+                            </h3>
+                        </li>
+                        <div class="main_content_left_link_content">
+                            <li>
+                                <a class="main_content_left_link active" href="society_readability.html">SmartReading適性閱讀
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">職涯測驗
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">DECE英語診斷
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">PASSION補救教學
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">PASSION偏鄉優質教育學分學程
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">自然光眼動儀
+                                </a>
+                            </li>
+                        </div>
+                        
+                    </div>
+                    
                 </ul>
-                <ul class="main_content_left_ul">
-                    <li>
-                        <h3>
-                            社會服務
-                        </h3>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">科普閱讀力大賽
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">基測會考
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">華語教學
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">政府合作案
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">TEACHUB
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main_content_left_link" href="">語言政策論壇記者會
-                        </a>
-                    </li>
+                <ul class="main_content_left_ul society_ul">
+                    <div class="society_li">
+                        <li class="main_content_left_link_tittle">
+                            <h3>
+                                社會服務
+                            </h3>
+                        </li>
 
+                        <div class="main_content_left_link_content">
+                            <li>
+                                <a class="main_content_left_link" href="">科普閱讀力大賽
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">基測會考
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">華語教學
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">政府合作案
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">TEACHUB
+                                </a>
+                            </li>
+                            <li>
+                                <a class="main_content_left_link" href="">語言政策論壇記者會
+                                </a>
+                            </li>
+                        </div>
+                    </div>
                 </ul>
             </div>
             <div class="main_content_right">
@@ -296,6 +306,13 @@
         $("+div", this).slideUp();
         $(this).children("span").removeClass("up");
       }
+    });
+
+    $(".main_content_left_link_tittle").click(function(){
+        $(this).parents().parents().siblings(".main_content_left_ul").children().children(".main_content_left_link_content").hide();
+        $(this).siblings(".main_content_left_link_content").toggle();
+        $(this).parents().parents().siblings(".main_content_left_ul").children().children(".main_content_left_link_tittle").removeClass("active");
+        $(this).toggleClass("active");
     })
   </script>
 
