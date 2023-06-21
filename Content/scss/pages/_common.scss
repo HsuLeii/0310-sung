@@ -67,8 +67,9 @@ main {
             &.main_content_left_society{
                 display: flex;
                 position: relative;
-
+                
                 .main_content_left_ul{
+                    border-bottom: 0;
 
                     &.society_ul{
                         flex-direction: column;
@@ -126,6 +127,8 @@ main {
             .main_content_left_ul{
                 display: flex;
                 flex-wrap: wrap;
+                margin: 0 0 40px;
+                border-bottom: 1px solid $black;
                 li{
                     width: auto;
                     margin: 0 50px 20px 0;
@@ -717,6 +720,7 @@ main {
                     flex-direction: column;
                     align-items: flex-end;
                     margin: 0 0 50px;
+                border-bottom: 0;
 
                     li {
                         width: auto;

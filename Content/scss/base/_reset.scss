@@ -148,6 +148,10 @@ body {
 
 body {
     background-color: $body_bg;
+    overflow-x: hidden;
+    &.fixed{
+        overflow: hidden;
+    }
 }
 
 .cursor {
