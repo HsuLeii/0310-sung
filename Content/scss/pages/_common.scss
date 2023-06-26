@@ -168,13 +168,19 @@ main {
                 .team_member_area_item {
                     display: none;
                     flex-direction: column;
-                    justify-content: center;
-                    margin: 0 2.5% 20px;
-
-                        width: 45%;
+                    align-items: center;
+                    margin: 0 5% 40px;
+                    width: 40%;
 
                         .team_member_area_item_img {
-                            width: 50%;
+                            width: 100%;
+                            margin: 0 auto 10px;
+                        }
+
+                        .team_member_area_item_text {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
                         }
                     
 
@@ -447,7 +453,21 @@ main {
 
 @media screen and (min-width: 500px) {}
 
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+    main {
+        .main_content_area {
+            .main_content_right {
+                .team_member_area {
+    
+                    .team_member_area_item {
+                        margin: 0 2.6% 40px;
+                        width: 28%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 768px) {
     .slide {
@@ -474,11 +494,8 @@ main {
             .main_content_right {
                 .team_member_area {
                     .team_member_area_item {
-                        margin: 0 1.5% 40px;
-                            width: 30%;
-                            .team_member_area_item_img {
-                                width: 50%;
-                            }
+                        margin: 0 2.5% 40px;
+                            width: 20%;
                         
                     }
                 }
@@ -591,6 +608,11 @@ main {
                                 width: 35%;
                                 margin: 0 10px 0 0;
                             }
+
+                            .team_member_area_item_text {
+                                width: 60%;
+                                justify-content: flex-start;
+                            }
                         
                     }
                 }
@@ -626,6 +648,24 @@ main {
             }
 
         }
+    }
+
+    main {
+
+        .main_content_area {
+
+            .main_content_right {
+
+                .team_member_area {
+                    .team_member_area_item {
+                            width: 28%;
+                            margin: 0 2.6% 40px;
+                        
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -755,6 +795,14 @@ main {
                 background-color: $white;
                 margin: 0;
 
+                .team_member_area {
+                    .team_member_area_item {
+                            width: 45%;
+                            margin: 0 2.5% 40px;
+                        
+                    }
+                }
+
                 .main_content_flex_item {
                     flex-direction: row;
                     align-items: center;
@@ -787,12 +835,8 @@ main {
 
                 .team_member_area {
                     .team_member_area_item {
-                            width: 30%;
-                            margin: 0 1.5% 40px;
-
-                            .team_member_area_item_img{
-                                width: 28%;
-                            }
+                            width: 45%;
+                            margin: 0 2.5% 40px;
                     }
                 }
 
@@ -833,6 +877,24 @@ main {
                         img {
                             width: 170px;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    main {
+        .main_content_area {
+
+            .main_content_right {
+
+                .team_member_area {
+                    .team_member_area_item {
+                            width: 28%;
+                            margin: 0 2.6% 40px;
                     }
                 }
             }
